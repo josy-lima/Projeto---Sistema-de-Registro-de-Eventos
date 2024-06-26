@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="cadastro_evento.css">
+  <title>Cadastro de Evento</title>
+</head>
+<body>
+  <header>
+    <h1>Sistema de Registro de Eventos</h1>
+  </header>
+
+  <main>
+    <h1>Cadastro de Evento</h1>
+
+    <form action="processar_evento.php" method="post">
+      <label for="nomeEvento">Nome do Evento</label>
+      <input type="text" id="nomeEvento" name="nomeEvento" required placeholder="Digite o nome do evento">
+    
+      <label for="dataEvento">Data</label>
+      <input type="date" id="dataEvento" name="dataEvento" required placeholder="Selecione a data">
+    
+      <label for="horaInicio">Hora de Início</label>
+      <input type="time" id="horaInicio" name="horaInicio" required placeholder="Hora de início">
+    
+      <label for="horaFim">Hora de Fim</label>
+      <input type="time" id="horaFim" name="horaFim" required placeholder="Hora de fim">
+    
+      <label for="localEvento">Local</label>
+      <input type="text" id="localEvento" name="localEvento" required placeholder="Informe o local">
+    
+      <label for="descricaoEvento">Descrição</label>
+      <textarea id="descricaoEvento" name="descricaoEvento" rows="5" required placeholder="Descreva o evento"></textarea>
+    
+      <label for="organizadorEvento">Organizador</label>
+      <input type="text" id="organizadorEvento" name="organizadorEvento" required placeholder="Nome do organizador">
+    
+      <button type="submit">Cadastrar Evento</button>
+    </form>
+    
+  </main>
+</body>
+</html>
